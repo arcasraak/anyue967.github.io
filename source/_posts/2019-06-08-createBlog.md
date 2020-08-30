@@ -1,8 +1,10 @@
 ---
 title: 搭建个人博客
-date: 2019-06-08 09:53:34
-tags: [Blog]
+tags:
+  - Blog
 categories: CRH
+abbrlink: c442673f
+date: 2019-06-08 09:53:34
 ---
 2019-06-08-搭建博客
 <!-- more -->
