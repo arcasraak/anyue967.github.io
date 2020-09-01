@@ -14,7 +14,7 @@
   "dependencies": {
     "hexo": "^5.1.1",
     "hexo-abbrlink": "^2.2.1",
-    "hexo-asset-image": "git+https://github.com/CodeFalling/hexo-asset-image.git",
+    "hexo-asset-image": "git+https://github.com/foreveryang321/hexo-asset-image.git",
     "hexo-browsersync": "^0.3.0",
     "hexo-deployer-git": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
