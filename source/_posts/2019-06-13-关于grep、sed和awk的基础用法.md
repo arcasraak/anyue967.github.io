@@ -273,7 +273,7 @@ seq 6 |sed -n '/3/,/6/'p      # 3 4 5 6
 ```bash
 grep '05/Sep/2017' cd.mobiletrain.org.log |wc -l  
 awk '$4>="[05/sep/2017:08:00:00" && "[05/sep/2017:09:00:00" {print $0}' sz.mobiletrain.log |wc -l
-```    
+```
 
 + 2.统计2017年9月5日 一天访问最多的10个IP(top 10)  
 ```bash
@@ -289,12 +289,12 @@ grep '05/Sep/2017' sz.mobiletrain.org.log |awk '{ips[$1]++} END{for(i in ips){if
 + 4.统计2017年9月5日 访问最多的10个页面($request top 10)  
 ```bash
 awk '/05\/Sep\/2017/ {urls[$7]++} END{for(i in urls){print i,urls[i]}}' sz.mobiletrain.org.log |sort -k1 -rn |head -n10
-```  
+```
 
 + 5.统计2017年9月5日 每个url访问内容总大小($body_bytes_sent)  
 ```bash
 awk '/05\/Sep\/2017/ {urls[$7]++; size[$7]+=$10} END{for(i in urls){print urls[i],size[i],i}}' sz.mobiletrain.org.log |sort -k1 -rn |head -n10
-```  
+```
 
 + 6.统计2017年9月5日 每个IP访问状态码数量($status)  
 ```bash
@@ -319,7 +319,7 @@ awk '$4>="[05/Sep/2017:08:30:00 && [05/Sep/2017:09:00:00" {if($9=="404"){ip_code
 + 10.统计2017年9月5日各种状态码数量  
 ```bash
 awk '/05\/09\/2017/ {code[$9]++;total++} END{for(i in code){printf i"\t"; printf code[i]"\t"; printf "%.2f",code[i]/total*100; print "%"}}' sz.mobiletrain.org.log
-``` 
+```
 
 + 11.统计独立IP数
 ```bash
