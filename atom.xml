@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>旅行</title>
+  <icon>https://anyue967.github.io/icon.png</icon>
+  <subtitle>The end of the world</subtitle>
+  <link href="https://anyue967.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://anyue967.github.io/"/>
+  <updated>2020-08-31T01:02:39.006Z</updated>
+  <id>https://anyue967.github.io/</id>
+  
+  <author>
+    <name>anyue967</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux Tools</title>
+    <link href="https://anyue967.github.io/posts/df044da8/"/>
+    <id>https://anyue967.github.io/posts/df044da8/</id>
+    <published>2019-11-29T07:19:44.000Z</published>
+    <updated>2020-08-31T01:02:39.006Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2019-11-29-LinuxTools&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Linux" scheme="https://anyue967.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://anyue967.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SPL</title>
+    <link href="https://anyue967.github.io/posts/546a1914/"/>
+    <id>https://anyue967.github.io/posts/546a1914/</id>
+    <published>2019-11-20T08:06:25.000Z</published>
+    <updated>2020-08-31T08:29:16.238Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2019-11-20-SPL&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="SPL" scheme="https://anyue967.github.io/categories/SPL/"/>
+    
+    
+    <category term="SPL" scheme="https://anyue967.github.io/tags/SPL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Zookeeper和Kafka</title>
+    <link href="https://anyue967.github.io/posts/e1f23b16/"/>
+    <id>https://anyue967.github.io/posts/e1f23b16/</id>
+    <published>2019-11-08T14:58:30.000Z</published>
+    <updated>2020-08-31T14:02:50.075Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2019-11-08-Zookeeper&amp;amp;Kafka&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Linux" scheme="https://anyue967.github.io/categories/Linux/"/>
+    
+    
+    <category term="linux" scheme="https://anyue967.github.io/tags/linux/"/>
+    
+    <category term="Devops" scheme="https://anyue967.github.io/tags/Devops/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>五笔和双拼</title>
+    <link href="https://anyue967.github.io/posts/47b7e05b/"/>
+    <id>https://anyue967.github.io/posts/47b7e05b/</id>
+    <published>2019-11-05T10:46:43.000Z</published>
+    <updated>2020-08-31T01:03:34.358Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2019-11-05-五笔和双拼&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Linux笔记</title>
+    <link href="https://anyue967.github.io/posts/e511c25d/"/>
+    <id>https://anyue967.github.io/posts/e511c25d/</id>
+    <published>2019-10-31T09:12:13.000Z</published>
+    <updated>2020-08-31T08:19:30.101Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2019-10-31&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://anyue967.github.io/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="https://anyue967.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Redis</title>
+    <link href="https://anyue967.github.io/posts/bae4ff13/"/>
+    <id>https://anyue967.github.io/posts/bae4ff13/</id>
+    <published>2019-09-14T01:30:20.000Z</published>
+    <updated>2020-08-31T07:02:01.354Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2019-09-14-Redis&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux, Redis" scheme="https://anyue967.github.io/categories/linux-Redis/"/>
+    
+    
+    <category term="Redis" scheme="https://anyue967.github.io/tags/Redis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ES</title>
+    <link href="https://anyue967.github.io/posts/3eb5a9f1/"/>
+    <id>https://anyue967.github.io/posts/3eb5a9f1/</id>
+    <published>2019-09-14T00:30:20.000Z</published>
+    <updated>2020-09-01T08:03:45.016Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2019-09-14-ElasticSearch&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Devops, linux, ES" scheme="https://anyue967.github.io/categories/Devops-linux-ES/"/>
+    
+    
+    <category term="linux" scheme="https://anyue967.github.io/tags/linux/"/>
+    
+    <category term="Devops" scheme="https://anyue967.github.io/tags/Devops/"/>
+    
+    <category term="ES" scheme="https://anyue967.github.io/tags/ES/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python</title>
+    <link href="https://anyue967.github.io/posts/a4d4b8b8/"/>
+    <id>https://anyue967.github.io/posts/a4d4b8b8/</id>
+    <published>2019-09-10T15:25:10.000Z</published>
+    <updated>2020-08-31T06:19:55.203Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2019-09-10-python&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="python" scheme="https://anyue967.github.io/categories/python/"/>
+    
+    
+    <category term="python" scheme="https://anyue967.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>apache-nginx-tomcat</title>
+    <link href="https://anyue967.github.io/posts/c9dd20a7/"/>
+    <id>https://anyue967.github.io/posts/c9dd20a7/</id>
+    <published>2019-09-09T15:25:10.000Z</published>
+    <updated>2020-08-31T06:44:06.056Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2019-09-09-ANT&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="apache" scheme="https://anyue967.github.io/categories/apache/"/>
+    
+    <category term="nginx" scheme="https://anyue967.github.io/categories/apache/nginx/"/>
+    
+    <category term="tomcat" scheme="https://anyue967.github.io/categories/apache/nginx/tomcat/"/>
+    
+    
+    <category term="devops" scheme="https://anyue967.github.io/tags/devops/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ansible</title>
+    <link href="https://anyue967.github.io/posts/a71433d/"/>
+    <id>https://anyue967.github.io/posts/a71433d/</id>
+    <published>2019-08-28T01:22:57.000Z</published>
+    <updated>2020-08-31T16:28:46.512Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2019-08-28-Ansible&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Ansible" scheme="https://anyue967.github.io/categories/Ansible/"/>
+    
+    
+    <category term="Linux" scheme="https://anyue967.github.io/tags/Linux/"/>
+    
+    <category term="Ansible" scheme="https://anyue967.github.io/tags/Ansible/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Js</title>
+    <link href="https://anyue967.github.io/posts/824395f6/"/>
+    <id>https://anyue967.github.io/posts/824395f6/</id>
+    <published>2019-08-21T04:49:26.000Z</published>
+    <updated>2020-08-29T04:25:07.266Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2019-08-21-JS&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Js" scheme="https://anyue967.github.io/categories/Js/"/>
+    
+    
+    <category term="HTML" scheme="https://anyue967.github.io/tags/HTML/"/>
+    
+    <category term="JavaScript" scheme="https://anyue967.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>shell</title>
+    <link href="https://anyue967.github.io/posts/4592b2fd/"/>
+    <id>https://anyue967.github.io/posts/4592b2fd/</id>
+    <published>2019-08-12T14:37:07.000Z</published>
+    <updated>2020-08-29T04:25:07.268Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2019-08-12-Shell&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Shell" scheme="https://anyue967.github.io/categories/Shell/"/>
+    
+    
+    <category term="Linux" scheme="https://anyue967.github.io/tags/Linux/"/>
+    
+    <category term="Shell" scheme="https://anyue967.github.io/tags/Shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS</title>
+    <link href="https://anyue967.github.io/posts/ee69e452/"/>
+    <id>https://anyue967.github.io/posts/ee69e452/</id>
+    <published>2019-08-08T12:01:40.000Z</published>
+    <updated>2020-08-29T04:25:07.265Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2019-08-08-CSS&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="CSS" scheme="https://anyue967.github.io/categories/CSS/"/>
+    
+    
+    <category term="CSS" scheme="https://anyue967.github.io/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>html-02</title>
+    <link href="https://anyue967.github.io/posts/82d0dbac/"/>
+    <id>https://anyue967.github.io/posts/82d0dbac/</id>
+    <published>2019-08-08T10:58:47.000Z</published>
+    <updated>2020-08-29T04:25:07.266Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2019-08-08-HTML2&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="HTML" scheme="https://anyue967.github.io/categories/HTML/"/>
+    
+    
+    <category term="HTML" scheme="https://anyue967.github.io/tags/HTML/"/>
+    
+    <category term="Web" scheme="https://anyue967.github.io/tags/Web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>html-01</title>
+    <link href="https://anyue967.github.io/posts/1bd98a16/"/>
+    <id>https://anyue967.github.io/posts/1bd98a16/</id>
+    <published>2019-08-08T07:44:11.000Z</published>
+    <updated>2020-08-29T04:25:07.265Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;HTML01&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="HTML" scheme="https://anyue967.github.io/categories/HTML/"/>
+    
+    
+    <category term="HTML" scheme="https://anyue967.github.io/tags/HTML/"/>
+    
+    <category term="Web" scheme="https://anyue967.github.io/tags/Web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网站数据备份</title>
+    <link href="https://anyue967.github.io/posts/f7bab86b/"/>
+    <id>https://anyue967.github.io/posts/f7bab86b/</id>
+    <published>2019-08-05T05:39:06.000Z</published>
+    <updated>2020-08-31T08:27:42.563Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2019-08-05-网站数据备份&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Hexo" scheme="https://anyue967.github.io/categories/Hexo/"/>
+    
+    
+    <category term="github" scheme="https://anyue967.github.io/tags/github/"/>
+    
+    <category term="Hexo" scheme="https://anyue967.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>tools</title>
+    <link href="https://anyue967.github.io/posts/eafade77/"/>
+    <id>https://anyue967.github.io/posts/eafade77/</id>
+    <published>2019-07-29T12:40:35.000Z</published>
+    <updated>2020-08-31T07:04:09.244Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2019-07-29-tools&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="CRH" scheme="https://anyue967.github.io/tags/CRH/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>review</title>
+    <link href="https://anyue967.github.io/posts/794381c6/"/>
+    <id>https://anyue967.github.io/posts/794381c6/</id>
+    <published>2019-07-26T02:49:34.000Z</published>
+    <updated>2020-09-01T08:34:30.545Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2019-07-26-Review&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Devops, linux" scheme="https://anyue967.github.io/categories/Devops-linux/"/>
+    
+    
+    <category term="linux" scheme="https://anyue967.github.io/tags/linux/"/>
+    
+    <category term="Devops" scheme="https://anyue967.github.io/tags/Devops/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Kubernetes</title>
+    <link href="https://anyue967.github.io/posts/9acacb00/"/>
+    <id>https://anyue967.github.io/posts/9acacb00/</id>
+    <published>2019-07-25T02:32:38.000Z</published>
+    <updated>2020-09-01T03:49:20.578Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2019-07-25-K8S&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="kubernetes" scheme="https://anyue967.github.io/categories/kubernetes/"/>
+    
+    
+    <category term="docker" scheme="https://anyue967.github.io/tags/docker/"/>
+    
+    <category term="k8s" scheme="https://anyue967.github.io/tags/k8s/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jenkins</title>
+    <link href="https://anyue967.github.io/posts/9a7f448e/"/>
+    <id>https://anyue967.github.io/posts/9a7f448e/</id>
+    <published>2019-07-23T13:38:48.000Z</published>
+    <updated>2020-08-29T04:25:07.262Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2019-07-23-Jenkins&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="CICD" scheme="https://anyue967.github.io/categories/CICD/"/>
+    
+    
+    <category term="Jenkins" scheme="https://anyue967.github.io/tags/Jenkins/"/>
+    
+    <category term="Linux" scheme="https://anyue967.github.io/tags/Linux/"/>
+    
+    <category term="CI" scheme="https://anyue967.github.io/tags/CI/"/>
+    
+    <category term="CD" scheme="https://anyue967.github.io/tags/CD/"/>
+    
+  </entry>
+  
+</feed>
