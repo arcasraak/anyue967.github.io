@@ -303,14 +303,14 @@
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/tags/index.html</loc>
+    <loc>https://anyue967.github.io/categories/index.html</loc>
     
     <lastmod>2020-08-19</lastmod>
     
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/categories/index.html</loc>
+    <loc>https://anyue967.github.io/tags/index.html</loc>
     
     <lastmod>2020-08-19</lastmod>
     
@@ -326,14 +326,14 @@
 
   
   <url>
-    <loc>https://anyue967.github.io/tags/Blog/</loc>
+    <loc>https://anyue967.github.io/tags/Adobe/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/tags/Adobe/</loc>
+    <loc>https://anyue967.github.io/tags/Blog/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -382,20 +382,6 @@
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/tags/markdown/</loc>
-    <lastmod>2020-09-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://anyue967.github.io/tags/story/</loc>
-    <lastmod>2020-09-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://anyue967.github.io/tags/Devops/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
@@ -404,6 +390,20 @@
   
   <url>
     <loc>https://anyue967.github.io/tags/%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2020-09-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://anyue967.github.io/tags/markdown/</loc>
+    <lastmod>2020-09-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://anyue967.github.io/tags/story/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -480,14 +480,14 @@
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/tags/Hexo/</loc>
+    <loc>https://anyue967.github.io/tags/CRH/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/tags/CRH/</loc>
+    <loc>https://anyue967.github.io/tags/Hexo/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -636,14 +636,14 @@
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/categories/markdown/</loc>
+    <loc>https://anyue967.github.io/categories/Devops-linux/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/categories/Devops-linux/</loc>
+    <loc>https://anyue967.github.io/categories/markdown/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
