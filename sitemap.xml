@@ -326,14 +326,14 @@
 
   
   <url>
-    <loc>https://anyue967.github.io/tags/Adobe/</loc>
+    <loc>https://anyue967.github.io/tags/Blog/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/tags/Blog/</loc>
+    <loc>https://anyue967.github.io/tags/Adobe/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -466,13 +466,6 @@
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/tags/CRH/</loc>
-    <lastmod>2020-09-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://anyue967.github.io/tags/docker/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
@@ -488,6 +481,13 @@
   
   <url>
     <loc>https://anyue967.github.io/tags/Hexo/</loc>
+    <lastmod>2020-09-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://anyue967.github.io/tags/CRH/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
