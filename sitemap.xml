@@ -261,14 +261,14 @@
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/posts/1bd98a16.html</loc>
+    <loc>https://anyue967.github.io/posts/ee69e452.html</loc>
     
     <lastmod>2020-08-29</lastmod>
     
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/posts/ee69e452.html</loc>
+    <loc>https://anyue967.github.io/posts/1bd98a16.html</loc>
     
     <lastmod>2020-08-29</lastmod>
     
@@ -303,14 +303,14 @@
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/categories/index.html</loc>
+    <loc>https://anyue967.github.io/tags/index.html</loc>
     
     <lastmod>2020-08-19</lastmod>
     
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/tags/index.html</loc>
+    <loc>https://anyue967.github.io/categories/index.html</loc>
     
     <lastmod>2020-08-19</lastmod>
     
@@ -326,14 +326,14 @@
 
   
   <url>
-    <loc>https://anyue967.github.io/tags/Adobe/</loc>
+    <loc>https://anyue967.github.io/tags/Blog/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/tags/Blog/</loc>
+    <loc>https://anyue967.github.io/tags/Adobe/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -354,13 +354,6 @@
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/tags/bat/</loc>
-    <lastmod>2020-09-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://anyue967.github.io/tags/linux/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
@@ -369,6 +362,13 @@
   
   <url>
     <loc>https://anyue967.github.io/tags/%E5%BC%80%E6%BA%90%E5%8D%8F%E8%AE%AE/</loc>
+    <lastmod>2020-09-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://anyue967.github.io/tags/bat/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -417,6 +417,13 @@
   </url>
   
   <url>
+    <loc>https://anyue967.github.io/tags/dockerfile/</loc>
+    <lastmod>2020-09-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://anyue967.github.io/tags/git/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
@@ -425,13 +432,6 @@
   
   <url>
     <loc>https://anyue967.github.io/tags/github/</loc>
-    <lastmod>2020-09-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://anyue967.github.io/tags/dockerfile/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -487,6 +487,13 @@
   </url>
   
   <url>
+    <loc>https://anyue967.github.io/tags/CSS/</loc>
+    <lastmod>2020-09-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://anyue967.github.io/tags/Hexo/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
@@ -508,14 +515,14 @@
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/tags/CSS/</loc>
+    <loc>https://anyue967.github.io/tags/Shell/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/tags/Shell/</loc>
+    <loc>https://anyue967.github.io/tags/devops/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -536,7 +543,7 @@
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/tags/devops/</loc>
+    <loc>https://anyue967.github.io/tags/Redis/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -544,13 +551,6 @@
   
   <url>
     <loc>https://anyue967.github.io/tags/ES/</loc>
-    <lastmod>2020-09-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://anyue967.github.io/tags/Redis/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -657,14 +657,14 @@
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/categories/github/</loc>
+    <loc>https://anyue967.github.io/categories/docker/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/categories/docker/</loc>
+    <loc>https://anyue967.github.io/categories/github/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -685,6 +685,13 @@
   </url>
   
   <url>
+    <loc>https://anyue967.github.io/categories/CSS/</loc>
+    <lastmod>2020-09-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://anyue967.github.io/categories/Hexo/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
@@ -699,14 +706,14 @@
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/categories/CSS/</loc>
+    <loc>https://anyue967.github.io/categories/Shell/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/categories/Shell/</loc>
+    <loc>https://anyue967.github.io/categories/apache/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -727,7 +734,7 @@
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/categories/apache/</loc>
+    <loc>https://anyue967.github.io/categories/linux-Redis/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -735,13 +742,6 @@
   
   <url>
     <loc>https://anyue967.github.io/categories/Devops-linux-ES/</loc>
-    <lastmod>2020-09-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://anyue967.github.io/categories/linux-Redis/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
