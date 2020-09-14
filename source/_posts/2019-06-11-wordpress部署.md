@@ -56,13 +56,13 @@ $ yum remove mariadb-libs-5.5.35-3.el7.x86_64
 ```
 
 ***依次安装, 各包之间有依赖关系***    
-```   
-$ rpm -ivh mysql-community-common-5.7.27-1.el7.x86_64.rpm  
+```   bash
+$ rpm -ivh mysql-community-common-5.7.27-1.el7.x86_64.rpm 
 $ rpm -ivh mysql-community-libs-5.7.27-1.el7.x86_64.rpm  
-$ rpm -ivh mysql-community-client-5.7.27-1.el7.x86_64.rpm  
-$ rpm -ivh mysql-community-server-5.7.27-1.el7.x86_64.rpm  
+$ rpm -ivh mysql-community-client-5.7.27-1.el7.x86_64.rpm 
+$ rpm -ivh mysql-community-server-5.7.27-1.el7.x86_64.rpm 
 $ find / -name mysql -print  
-$ rpm -ql XXXX.rpm	// 查看安装路路径
+$ rpm -ql XXXX.rpm	#查看安装路路径
 ```
 
 + 数据库目录: 
@@ -70,15 +70,15 @@ $ rpm -ql XXXX.rpm	// 查看安装路路径
   /var/lib/mysql/
   ```
 + 配置文件: 
-  ```
+  ```bash
   /usr/share/mysql #(mysql.server命令及配置文件)
   ```
 + 相关命令: 
-  ```
+  ```bash
   /usr/bin # (mysqladmin mysqldump等命令)
   ```
 + 启动脚本: 
-  ```
+  ```bash
   /etc/rc.d/init.d/   # (启动脚本文件mysql的目录)  
   $ vim /etc/my.cnf  
   # For advice on how to change settings please see
@@ -89,7 +89,7 @@ $ rpm -ql XXXX.rpm	// 查看安装路路径
   ```
 
 #### 1.2 二进制安装Mysql:
-```
+```bash
 $ tar -xzvf mysql-5.7.27-el7-x86_64.tar.gz
 $ groupadd mysql
 $ useradd -r -g mysql -s /sbin/nologin mysql      # -r 创建系统账户  
@@ -134,7 +134,7 @@ $ chkconfig mysqld on
 **[源码安装参考](https://www.cnblogs.com/galengao/p/5755788.html)**
 
 + 安装boost(若只是安装mysql, 不用安装, 编译引用解包路径即可)  
-```
+```bash
 $ wget https://nchc.dl.sourceforge.net/project/boost/boost/1.59.0/boost_1_59_0.tar.gz    
 $ tar xzf boost_1_59_0.tar.gz 
 $ cd boost_1_59_0  
@@ -200,14 +200,14 @@ mysql> grant all privileges on *.* to root@'%' with grant option;
 #### 1.4 安装Apache:
 + 安装依赖：
 + pcre
-  ```
+  ```bash
   tar -xzvf pcre-8.43.tar.gz
   ./configure --prefix=/usr/local/pcre
   `make && make install
   ```
 
 + apr
-  ```
+  ```bash
   tar -xzvf apr-1.7.0.tar.gz
   ./configure --prefix=/usr/local/apr
   make && make install
@@ -286,21 +286,21 @@ mysql> grant all privileges on *.* to root@'%' with grant option;
 + 问题1:   
   - **服务不支持chkconfig的解决?**  
   - **解决方法:**
-    ```
+    ```bash
     httpd 脚本的开头要这样加：  
 	  #!/bin/bash
 	  #chkconfig:345 61 61 	# 此行的345参数表示, 在哪些运行级别启动
 	  #description:Apache httpd # 此行必写,描述服务.
     ```
 + level<等级代号> 　指定读系统服务要在哪一个执行等级中开启或关毕。
-  ```
-  等级0表示：表示关机
-  等级1表示：单用户模式
-  等级2表示：无网络连接的多用户命令行模式
-  等级3表示：有网络连接的多用户命令行模式
-  等级4表示：不可用
-  等级5表示：带图形界面的多用户模式
-  等级6表示：重新启动
+  ```bash
+  #等级0表示：表示关机
+  #等级1表示：单用户模式
+  #等级2表示：无网络连接的多用户命令行模式
+  #等级3表示：有网络连接的多用户命令行模式
+  #等级4表示：不可用
+  #等级5表示：带图形界面的多用户模式
+  #等级6表示：重新启动
   ```
 + [nginx参考](https://anyue967.github.io/2019/06/11/LNMP架构部署动态网站环境/)  
 
@@ -308,7 +308,7 @@ mysql> grant all privileges on *.* to root@'%' with grant option;
 + [依赖包安装见](https://anyue967.github.io/2019/06/11/LNMP架构部署动态网站环境/)   
 + [编译参考](https://blog.csdn.net/zhou75771217/article/details/83303058)  
 + [PHP整合apache参考](https://blog.csdn.net/m0_37886429/article/details/79643078)
-  ```
+  ```bash
   $ wget wget https://nih.at/libzip/libzip-1.2.0.tar.gz 
   $ tar -xzvf libzip-1.2.0.tar.gz
   $ cd libzip-1.2.0/
@@ -320,7 +320,7 @@ mysql> grant all privileges on *.* to root@'%' with grant option;
 + 问题1:  
   - **off_t undefined?**  
   - **解决方法:**  
-    ```
+    ```bash
     $ export LD_LIBRARY_PATH=/usr/local/libgd/lib	
     $ echo '/usr/local/lib64 	# error: off_t undefined; 
       /usr/local/lib 
@@ -333,7 +333,7 @@ mysql> grant all privileges on *.* to root@'%' with grant option;
   - **如何让apache支持解析PHP?**  
   - **解决方法:**  
 + 编译PHP必须加 **--with-apxs2=/usr/local/apache24/bin/apxs**, 目的是在 /usr/local/apache24/modules 下生成对应的libphp7.so
-  ```
+  ```bash
   $ ./configure \
     --prefix=/usr/local/php73 \
     --with-config-file-path=/usr/local/php73/etc \
@@ -367,7 +367,7 @@ mysql> grant all privileges on *.* to root@'%' with grant option;
 **php-fpm.conf.default -->php-fpm.conf**
 **sapi/fpm/init.d.php-fpm -->/etc/rc.d/init.d/php-fpm**
 
-```
+```bash
 php.ini-development
 php.ini-production
 $ mv /etc/php.ini /etc/php.ini.bak
@@ -384,7 +384,7 @@ $ chkconfig php-fpm on
 ```
 
 **注意: PHP7里的用户设置在如下文件中配置, 而不是在php-fpm.conf中**
-```
+```bash
 /usr/local/php73/etc/php-fpm.d
 $ cp ./www.conf.default www.conf
 $ vim ./www/conf
@@ -393,7 +393,7 @@ $ vim ./www/conf
 ```
 
 **注意 httpd.conf 配置:**
-```
+```bash
 162 LoadModule php7_module        modules/libphp7.so
 173 User www
 174 Group www
@@ -410,13 +410,13 @@ $ vim ./www/conf
 
 问题1: **checking for libzip... not found configure: error: Please reinstall the libzip distribution**
 **解决方法:[参考](https://www.hahack.com/codes/cmake/)** 
-```
+```bash
 ln -s /usr/local/libzip/lib/libzip/include/zipconf.h /usr/local/include/zipconf.h
 ```
 
 问题2: **error: ‘INT_MAX’ undeclared (first use in this function)**  
 ***解决方法:***  
-```
+```bash
 #define INT_MAX 4096	# 声明宏定义  
 #include "/usr/include/limits.h"
 ```
@@ -432,7 +432,7 @@ ln -s /usr/local/libzip/lib/libzip/include/zipconf.h /usr/local/include/zipconf.
 + 对于 --with-vpx-dir: [参考](https://www.php.net/manual/zh/image.installation.php), 要激活 GD 支持, 配置 PHP 时加上 --with-gd[=DIR], DIR 是 GD 的基本安装目录, 要使用推荐的绑定的 GD 库版;  
 
 ### 2. 测试:
-```
+```bash
 $ cd /usr/local/apache24/htdocs/wordpress
 $ cp ../wp-config-sample.php wp-config.php
 $ vim wp-config.php

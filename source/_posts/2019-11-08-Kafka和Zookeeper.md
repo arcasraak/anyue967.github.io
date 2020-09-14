@@ -81,8 +81,9 @@ date: 2019-11-08 22:58:30
 | stat   | 查看节点状态            |
 
 + 连接到Zookeeper：
-  * `$ bin/zkCli.sh -server 127.0.0.1:2181` # help 查询帮助命令 
-
+  
+* `$ bin/zkCli.sh -server 127.0.0.1:2181` # help 查询帮助命令 
+  
 + 创建znode
   ```bash
   [zkshell: 9] create /zk_test "my_data"    # 要有相应的值 
@@ -145,6 +146,7 @@ vim myid
 
 + 在Kafka中，客户端和服务器之间的通信是通过简单，高性能，与语言无关的`TCP协议`完成的。
   
+
 {% asset_img kafka-apis.png [kafka-apis] %}    
 
 + topics：主题是被发布记录的一种类别或者订阅名称，Kafka的主题是通常是多用户的，也即一个主题可以有零个，一个或者多个消费者来订阅写入该主题的数据；对于每个主题，Kafka集群都会维护一个分区日志。
@@ -171,4 +173,7 @@ vim myid
 > 依赖于Zk  
 
 #### 5.2 安装部署
+```bash
 tar -xzvf kafka_version.tgz -C /opt/
+```
+

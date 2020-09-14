@@ -15,8 +15,9 @@ date: 2019-07-26 10:49:34
 ### **linux启动过程**？
 + [文档参考链接](https://www.runoob.com/linux/linux-system-boot.html)
 + **POST--> BIOS(Boot Sequence)--> MBR(bootloader,446)--> Kernel--> initrd(initramfs)--> [ROOTFS]--> /sbin/init(/etc/inittab)**  
-  * initrd：Linux初始RAM磁盘（initrd）是在系统引导过程中挂载的一个临时根文件系统；
-
+  
+* initrd：Linux初始RAM磁盘（initrd）是在系统引导过程中挂载的一个临时根文件系统；
+  
 + init进程是系统所有进程的起点
     |  类型   |  名称   |                         位置                          |
     | :------ | :------ | :---------------------------------------------------- |
@@ -38,7 +39,8 @@ date: 2019-07-26 10:49:34
 
 ### Apache设置虚拟目录的字段?
 + `vim /etc/httpd/conf/httpd.conf`
-  ```
+  
+  ```bash
   基于IP地址:
   <VirtualHost IP>
   DocumentRoot /home/wwwroot/10
@@ -46,8 +48,8 @@ date: 2019-07-26 10:49:34
   <Directory /home/wwwroot/10 >
   AllowOverride None
   Require all granted
-  </VirtualHOst>
-
+</VirtualHOst>
+  
   基于主机域名:
   <VirtualHost IP>
   DocumentRoot /home/wwwroot/www
@@ -55,8 +57,8 @@ date: 2019-07-26 10:49:34
   <Directory /home/wwwroot/www >
   AllowOverride None
   Require all granted
-  </VirtualHOst>
-
+</VirtualHOst>
+  
   基于端口号:
   <VirtualHost IP:8080>
   DocumentRoot /home/wwwroot/8080
@@ -68,20 +70,27 @@ date: 2019-07-26 10:49:34
   ```
 
 ### 列出Linux打包工具并写出相应解压参数, 至少3种
-+ `tar -czvf`     // -z gzip(.tar.gz)  -j bzip(.bz2) 
-+ `zip test.txt.zip test.zip` // 压缩文件
-+ `unzip test.zip -d /tmp`    // -l 查看
+```bash
+tar -czvf     # -z gzip(.tar.gz)  -j bzip(.bz2) 
+zip test.txt.zip test.zip  #压缩文件
+unzip test.zip -d /tmp   # -l 查看
+```
 
 ### 利用sed命令将test.txt中所有的回车换成空格?
-+ `sed -i s/\r/ /g test.txt`
-+ `seq 10 |tr "\n" " "`
-+ `seq 10 |awk -v ORS=" " '{print $0}'`
-
+```bash
+sed -i s/\r/ /g test.txt
+seq 10 |tr "\n" " "
+seq 10 |awk -v ORS=" " '{print $0}'
+```
 ### 在每周六的凌晨3:15执行/home/shell/collect.pl, 并将标准输出和标准错误输出到/dev/null设备, 写出crontab中的语句?
-+ `15 3 * * 6 /home/shell/collect.pl > /dev/null 2>&1` 
+```bash
+15 3 * * 6 /home/shell/collect.pl > /dev/null 2>&1
+```
 
 ### 计划每星期天早上8点服务器定时重启，如何实现？
-+ `00 8 * * 7 /sbin/init 6`  
+```bash
+00 8 * * 7 /sbin/init 6
+```
 
 ### 当用户在浏览器输入网址，计算机对DNS解释经过哪些流程？（注：本机跟本地DNS还没有缓存）
 + a.用户输入网址到浏览器；
@@ -96,14 +105,18 @@ date: 2019-07-26 10:49:34
 支持，需要增加相关支持的内核补丁，并且要重新编译内核。或者使用crontab配合iptables，首先：`vi /deny.bat` 输入`/sbin/iptables -A OUTPUT -p tcp -s 192.168.1.0/24 --dport 80 -j DROP`保存退出，打开crontab-e `00 21＊　＊　＊ /bin/sh /deny.bat`  
 
 ### 源码编译apache, 要求安装目录为/usr/local/apache, 需有压缩模块, rewrtie, worker模式, 并说明apache的worker MPM中,为什么ServerLimit要放到配置段最前面?
-    tar -xzvf apr-1.6.3.tar.gz 
-    cd apache-1.6.3
-    ./configure --prefix=/usr/local/apache --enable-so --with-rewrite --with-mpm-worker  # 不放在最前面, client会忽略掉的
-    make
-    make install
+```bash
+tar -xzvf apr-1.6.3.tar.gz 
+cd apache-1.6.3
+./configure --prefix=/usr/local/apache --enable-so --with-rewrite --with-mpm-worker  # 不放在最前面, client会忽略掉的
+make
+make install
+```
 
 ### 匹配文本中的key, 并打印出该行及下面5行？
-- `grep -A5 key filename`
+```bash
+grep -A5 key filename
+```
 
 ### dmseg命令中看到ip_conntrack:table full, dropping packet.如何解决？
 - [参考链接](http://www.ttlsa.com/linux/ip_conntrack-table-full-dropping-packet-solution/)
@@ -122,11 +135,13 @@ date: 2019-07-26 10:49:34
 - CentOS 6.X / RHEL 6.X: `dracut -f`
 
 ### 如何查看bond0的状态?
-- `cat /proc/net/bonding/bond0`
+```bash
+cat /proc/net/bonding/bond0
+```
 
 ### linux中的/proc文件系统有什么用？
 - /proc 文件系统是一个虚拟文件系统, 它只存在内存当中, 而不占用外存空间, Linux 内核提供了一种通过 /proc 文件系统, 在运行时访问内核内部数据结构, 改变内核设置的机制.
-  ```
+  ```bash
   查看proc信息: ls /proc/
   查看内核信息: ls /proc/sys
   查看网卡信息: ls /proc/net
@@ -140,8 +155,10 @@ date: 2019-07-26 10:49:34
 - IP隧道(IP Tunneling)模式: LB收到用户请求包后, 根据IP隧道协议封装该包, 然后传给某个选定的RS; RS解出请求信息, 直接将应答内容传给用户。此时要求RS和LB都要支持IP隧道协议.
 
 ### Mysql数据库的备份和还原？
-- `mysqldump -hhostname -uusername -ppassword databasename > backupfile.sql`
-- `mysql -hhostname -uusername -ppassword databasename < backupfile.sql`
+```bash
+mysqldump -hhostname -uusername -ppassword databasename > backupfile.sql
+mysql -hhostname -uusername -ppassword databasename < backupfile.sql
+```
 
 ### Linux系统是由哪些部分组成？
 + Linux系统一般有4个主要部分：`内核、shell、文件系统和应用程序`
@@ -151,14 +168,16 @@ date: 2019-07-26 10:49:34
   * Linux应用程序: 标准的Linux系统一般都有一套都有称为应用程序的程序集，它包括文本编辑器、编程语言、XWindow、办公套件、Internet工具和数据库等。
 
 ### 用一条命令查看目前系统已经启动服务监听的端口？
-- ` netstat -antl |grep "LISTEN"`
+- `netstat -antl |grep "LISTEN"`
 
 ### 统计出一台web srver上各个状态(ESTABLISHED/SYN_SENT/SYN-RECV等)的个数
-- `cat access_log | awk ‘{print $1}’ | uniq -c|sort -rn|head -10`
-- `netstat -antl |grep "ESTABLISHED" |wc -l`
-- `netstat -antl |grep "SYN_SENT" |wc -l`
-- `netstat -antl |grep "SYN_RECV" |wc -l`
-- `netstat -n |grep ^tcp |awk '{print $NF}' |sort -r |uniq -c `
+```bash
+cat access_log | awk ‘{print $1}’ | uniq -c|sort -rn|head -10
+netstat -antl |grep "ESTABLISHED" |wc -l
+netstat -antl |grep "SYN_SENT" |wc -l
+netstat -antl |grep "SYN_RECV" |wc -l
+netstat -n |grep ^tcp |awk '{print $NF}' |sort -r |uniq -c
+```
 
 ### 什么是默认登录shell?
 + 一般Linux默认的用户shell都是bash, 可以登录进去敲命令, 修改 `usermod -s /bin/zsh username`; `useradd -s /bin/zsh username`
@@ -168,7 +187,7 @@ date: 2019-07-26 10:49:34
 + 局部(标准、普通)变量: 生效范围为当前shell进程, 对当前shell之外的其他shell进程, 包括当前shell的子进程均无效
 + 环境(全局)变量: 生效范围为当前shell进程及其子进程(export=declare -x|env命令可以查看系统中环境变量)
 + 本地变量: 生效范围为当前shell进程中某代码片断，通常指函数
-+ 位置变量: `$1 $2 $3...
++ 位置变量: `$1 $2 $3...`
 + 特殊变量: `$? $0 $* $@ $# $$`
 
 ### 监控？特点
@@ -176,7 +195,7 @@ date: 2019-07-26 10:49:34
 + 使用cacti 对流量进行监控。zabbix可以执行脚本监视，图形界面监控。
 
 ### shell如何定义函数?
-```
+```bash
 #!/bin/bash
 function sum(){
     val1=$1
@@ -201,37 +220,48 @@ echo $ret_val
   * `第二次挥手：`被动关闭方收到FIN包后，发送一个ACK给对方，确认序号为收到序号+1(与SYN相同，一个FIN占用一个序号)。
   * `第三次挥手：`被动关闭方发送一个FIN，用来关闭被动关闭方到主动关闭方的数据传送，也就是告诉主动关闭方，我的数据也发送完了，不会再给你发数据了。
   * `第四次挥手：`主动关闭方收到FIN后，发送一个ACK给被动关闭方，确认序号为收到序号+1，至此，完成四次挥手。
-
-+ time_wait状态是四次挥手中服务器向客户端发送FIN终止连接后进入的状态
+  * time_wait状态是四次挥手中服务器向客户端发送FIN终止连接后进入的状态
 
 ### 什么是跨站脚本攻击，有何危害，sql注入攻击如何防范
 + 跨站脚本攻击(也称为XSS)：指利用网站漏洞从用户那里恶意盗取信息。用户在浏览网站、使用即时通讯软件、甚至在阅读电子邮件时，通常会点击其中的链接。攻击者通过在链接中插入恶意代码，就能够盗取用户信息。
 + sql注入：即通过把SQL命令插入到Web表单递交或输入域名或页面请求的查询字符串，最终达到欺骗服务器执行恶意的SQL命令
 
 ### 重置MySQL root密码？
-+ vim /etc/my.cnf, 在[mysqld]下添加skip-grant-tables
-+ `UPDATE mysql.user SET password=PASSWORD('新密码') where USER='root';`
-+ `flush privileges`
+```bash
+vim /etc/my.cnf, 在[mysqld]下添加skip-grant-tables
+UPDATE mysql.user SET password=PASSWORD('新密码') where USER='root';
+flush privileges
+```
 
 ### apache 和 MySQL两种服务能否装在同一台机器上，如何查看apache和MySQL端口和进程
-+ `netstat -an |grep :80   ps -ef |grep httpd   ps -aux |grep httpd`
-+ `netstat -an |grep :3306`
+```bash
+netstat -an |grep :80   ps -ef |grep httpd   ps -aux |grep httpd
+netstat -an |grep :3306
+```
 
 ### 统计/var/log/nginx/access.log日志访问量最多的前十个IP
 + nginx
-  * `awk '{print $1}' urlogfile |sort |uniq -c |sort -nr -k1 |head -n 1`
-  * `awk '{print $1}' /usr/local/nginx/logs/localhost.access.log |sort |uniq -c |sort -nr -k1 |head -n 10`
+  ```bash
+  awk '{print $1}' urlogfile |sort |uniq -c |sort -nr -k1 |head -n 1
+  awk '{print $1}' /usr/local/nginx/logs/localhost.access.log |sort |uniq -c |sort -nr -k1 |head -n 10
+  ```
 + apache
-  * `cd /var/log/httpd/; cat access_log |awk '{print $1}' |uniq -c |sort -rn -k1 |head -n 10`
+  ```bash
+  cd /var/log/httpd/; cat access_log |awk '{print $1}' |uniq -c |sort -rn -k1 |head -n 10
+  ```
 
 ### 怎么查看当前系统中每个IP的连接数，怎么查看当前磁盘IO(sysstat)，怎么查看当前网络的IO(iftop iotop)
-+ `netstat -n |awk '/^tcp/ {print $5}' |awk -F: '{print $1}' |sort |uniq -c |sort -rn`
-+ `iostat`
-+ `iftop`
+```bash
+netstat -n |awk '/^tcp/ {print $5}' |awk -F: '{print $1}' |sort |uniq -c |sort -rn
+iostat
+iftop
+```
 
 ### 如何将本地80 端口的请求转发到8080 端口，本地主机IP 为192.168.16.1  
-+ `iptables -t nat -A PREROUTING -d 192.168.16.1 -p tcp --dport 80 -j DNAT --to-destination 192.168.16.1:8080`  
-+ `iptables -t nat -A PREROUTING -d 192.168.16.1 -i eth0 -p tcp -dport 80 -j REDIRECT --to-port 8080`  
+```bash
+iptables -t nat -A PREROUTING -d 192.168.16.1 -p tcp --dport 80 -j DNAT --to-destination 192.168.16.1:8080  
+iptables -t nat -A PREROUTING -d 192.168.16.1 -i eth0 -p tcp -dport 80 -j REDIRECT --to-port 8080
+```
 
 ### 什么是NAT?常见的分为哪几种？DNAT和SNAT有什么不同，应用示例有哪些？
 `SNAT，DNAT，MASQUERADE`都是NAT，MASQUERADE是SNAT的一个特例。`SNAT`是指在数据包从网卡发送出去的时候，把数据包中的源地址部分替换为指定的IP，这样，接收方就认为数据包的来源是被替换的那个IP的主机；`MASQUERADE`是用发送数据的网卡上的IP来替换源IP，因此，对于那些`IP不固定的场合`，比如拨号网络或者通过dhcp分配IP的情况下，就得用MASQUERADE；`DNAT`，就是指数据包从网卡发送出去的时候，修改数据包中的目的IP，表现为如果你想访问A，可是因为网关做了DNAT，把所有访问A的数据包的目的IP全部修改为B，那么，你实际上访问的是B；
@@ -276,7 +306,7 @@ echo $ret_val
 + 6：reboot
 
 ### A文件，编写脚本判断A文件大于5的数字
-```
+```bash
 #!/bin/bash
 for i in `sed s/[^0-9]//g ./A`
 do
@@ -351,51 +381,3 @@ done
   * grub> boot
 + 另外故障
   * 单用户模式编辑inittab文件
-
-## Python
-### python2与python3的range(100)区别
-### 一句话解释什么样的语言能够用装饰器?
-### python内建数据类型
-### 简述面向对象中__new__和__init__((区别
-### 简述with方法打开处理文件帮我们做了什么?
-### 一行代码实现1--100的和
-### 如何在一个函数内部修改全局变量？
-### 列出5个python标准库？
-### 字典如何删除键和合并2个字典？
-### python实现列表去重的方法？
-### python三元表达式？
-### python中如何实现多线程？
-### 解释继承？
-### 什么是Flask？
-### 如何在python中管理内存？
-### 大数据的文件读取？
-### 迭代器与生成器的作用？
-### 装饰器的作用及功能？
-### 谈谈GIL
-### 如何提高python运行效率?
-### 线上服务可能因为种种原因导致挂掉怎么办?
-### 常用linux命令
-### python中的yield用法
-### 描述数组、链表、队列、堆栈的区别
-### python 跟其他语言的区别
-### 简述解释型语言和编译型语言
-### python解释器种类及特点
-### 函数实现将IP地址转换成一个整数
-### 写爬虫是多进程好还是多线程好？
-### 常见的反爬虫和应对方法
-### 分布式爬虫主要解决什么问题
-### 什么是猴子补丁
-### 计算文件中的大写字母数量
-### 什么是负索引
-### 如何以就地操作方式打乱一个列表的元素？
-### 如何使用多进制数字
-### 怎样获取字典所有键的列表
-### 为何不建议以下划线作为标识符的开头
-### 怎样声明多个变量并赋值
-### 字符串的查询替换
-### 给定排好的列表，打乱这个函数
-### 给定一串字典/列表，找出指定（前N个）最大值，最小值
-### 实现单例模式
-### 排序算法？
-### 如何在函数中设置全局变量
-### 如何用代码实现stack

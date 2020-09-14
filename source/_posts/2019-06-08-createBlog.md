@@ -26,7 +26,7 @@ date: 2019-06-08 09:53:34
 ### 安装 Node.js 
 ##### Linux/类Linux下利用nvm安装Node比较好，[https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm)
 
-```
+```bash
 $ curl https://raw.github.com/creationix/nvm/v0.33.11/install.sh | sh
 $ wget -qO- https://raw.github.com/creationix/nvm/v0.33.11/install.sh | sh
 ```
@@ -38,7 +38,7 @@ $ wget -qO- https://raw.github.com/creationix/nvm/v0.33.11/install.sh | sh
   > [参考cnblog博客](https://www.cnblogs.com/wyy1234/p/9727142.html)
 
 + 配置nvm安装目录下的 settings.txt
-```
+```bash
 $ root: F:\Design\nvm
 $ path: F:\Design\nodejs
 $ arch: 64 
@@ -52,14 +52,14 @@ $ npm_mirror: https://npm.taobao.org/mirrors/npm/
 $ npm config set prefix “F:\Design\nvm\npm”
 $ %NPM_HOME%=F:\Design\nvm\npm
 ```
- 
+
 + 配置国内仓库  
 ```
 $ npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
 
-[淘宝Node镜像](https://npm.taobao.org/mirrors/node/)  
-[淘宝Npm镜像](https://npm.taobao.org/mirrors/npm/)  
+:link:[淘宝Node镜像](https://npm.taobao.org/mirrors/node/)  
+:link:[淘宝Npm镜像](https://npm.taobao.org/mirrors/npm/)  
 
 ### nvm 命令  
 | 命令                              | 说明                                                         |
@@ -79,7 +79,7 @@ $ npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 ### 安装 Hexo 
 [Hexo官方参考文档](https://hexo.io/zh-cn/docs/)
-```
+```bash
 $ npm install -g hexo-cli
 $ hexo init <folder>  // 必须为空目录
 $ cd <folder>
@@ -102,9 +102,9 @@ $ hexo d  # deployer push 到仓库
 
 ### 配置优化Hexo(命令都是在博客主目录执行)
 #### 配置_config.yml
-[参考配置](https://github.com/cczeng/BlogBackup/blob/master/_config.yml)
+:link:[参考配置](https://github.com/cczeng/BlogBackup/blob/master/_config.yml)
 #### 安装`hexo-deployer-git`扩展
-```
+```bash
 $ npm install hexo-deployer-git --save
   
 deploy:
@@ -112,15 +112,15 @@ type: git
 repo: git@github.com:anyue967/anyue967.github.io.git
 branch: master
 ```
-   
+
 #### 添加插件
-```
+```bash
 $ npm install hexo-helper-live2d --save
 ```
 
-[参考官方 live-2d配置文件](https://github.com/EYHN/hexo-helper-live2d)
+:link:[参考官方 live-2d配置文件](https://github.com/EYHN/hexo-helper-live2d)
 
-```
+```bash
 $ npm install hexo-generator-search --save
 
 search:
@@ -130,10 +130,10 @@ format: html
 limit: 10000
 ```
 
-```
+```bash
 $ npm install hexo-filter-optimize --save
 ```
-  
+
 ## npm (Nodejs Package Manager)相关命令  
 | 命令                    | 说明                         |
 | :---------------------- | :--------------------------- |
@@ -149,14 +149,14 @@ $ npm install hexo-filter-optimize --save
 | npm list -g \| grep xx | 查找全局安装模块             |
 | npm list xx             | 查看模块版本号               |
 
-```
+```bash
 $ npm config set prefix “F:\Design\nvm\npm”      # 配置用npm下载模块时全局安装的包路径
 $ npm config set proxy=http://xxx               # 设置代理
 $ npm config set registry="http://r.cnmpjs.org"     # 设置镜像仓库
 $ npm install -g cnpm --registry=https://registry.npm.taobao.org`  # 使用淘宝镜像命令
 ```
 
-```
+```bash
 $ npm cache add <tarball file>
 $ npm cache add <folder>
 $ npm cache add <tarball url> 
@@ -171,7 +171,7 @@ npm restart
 ```
 
 ## nrm 的安装和使用
-```
+```bash
 npm install nrm -g    # 全局安装nrm  
 nrm ls    # 列出可用的镜像源  
 

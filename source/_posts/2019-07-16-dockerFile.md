@@ -20,7 +20,7 @@ docker run -it --rm -p 4000:80 dockerpracticesig/docker_practice
 
 #### FROM -- 指定基础image
 + 构建指令，必须指定且需要在 DockerFile 其他指令的前面，后续指令依赖指定的 image，FROM指定的基础 image 既可以是本地 Repo 也可以是官方的远程仓
-  ```
+  ```yaml
   FROM centos:7.2
   FROM centos
   ```
@@ -79,7 +79,7 @@ docker run -it --rm -p 4000:80 dockerpracticesig/docker_practice
   docker run -p port1 port2 port3 image
   docker run -p host_port1:port1 -p host_port2:port2 -p host_port3:port3 image
   ```
- 
+
 #### ENV --用于设置环境变量
 + 构建指令，在 image 中设置一个环境变量，后续的 RUN 可以使用，container 启动后，通过 `docker inspect` 查看环境变量，或者 `docker run --env key=value` 时设置或修改环境变量
   ```

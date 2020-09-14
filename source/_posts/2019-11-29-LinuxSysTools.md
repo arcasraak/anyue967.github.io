@@ -14,7 +14,7 @@ date: 2019-11-29 15:19:44
 
 ## 系统负载及性能
 ### 1. uptime 
-```
+```bash
 root@192.168.1.161:~$uptime
 10:30:06 up 10 days, 19:26,  1 user,  load average: 3.05, 2.81, 2.15
 
@@ -42,7 +42,7 @@ root@192.168.1.161:~$uptime
   + 第一行是物理内存使用，第二行是虚拟内存使用(交换空间)
   + 第四行的free + 第四行的buffers + 第五行的cached √
 
-```
+```bash
 top - 10:41:25 up 10 days, 19:37,  1 user,  load average: 0.34, 1.03, 1.56
 Tasks: 137 total,   1 running, 136 sleeping,   0 stopped,   0 zombie
 %Cpu(s): 16.6 us,  1.7 sy,  0.0 ni, 81.2 id,  0.3 wa,  0.0 hi,  0.3 si,  0.0 st
@@ -101,7 +101,7 @@ KiB Swap:  5242876 total,   399728 free,  4843148 used.    81848 avail Mem
   + id: 空闲时间(包括IO等待时间),中央处理器的空闲时间,以百分比表示
   + wa: 等待IO时间
 
-```
+```bash
 root@192.168.1.161:~$vmstat 5 5  # 5s内采集5个样本
 procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
 r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
@@ -117,7 +117,7 @@ r  b   swpd   free  inact active   si   so    bi    bo   in   cs us sy id wa st
 > 主要用于多CPU环境下，它显示各个可用CPU的状态  
 > mpstat -P CPU 时间间隔 采集次数  
 
-```
+```bash
 root@192.168.1.161:~$mpstat -P ALL
 Linux 3.10.0-693.el7.x86_64 (centos) 	2019年11月29日 	_x86_64_	(4 CPU)
 
@@ -134,7 +134,7 @@ Linux 3.10.0-693.el7.x86_64 (centos) 	2019年11月29日 	_x86_64_	(4 CPU)
 * %steal：管理程序(hypervisor)为另一个虚拟进程提供服务而等待虚拟 CPU 的百分比。
 * %idle：显示 CPU 空闲时间占用 CPU 总时间的百分比。
 
-```
+```bash
 root@192.168.1.161:~$sar -u -o test 10 3  # 周期 次数
 Linux 3.10.0-693.el7.x86_64 (centos) 	2019年11月29日 	_x86_64_	(4 CPU)
 
@@ -178,7 +178,7 @@ root@192.168.1.161:~$sar -u -f test	# 查看
 * `fdisk -l`    # 查看磁盘
 
 #### 6.1 新增加的磁盘
-```
+```bash
 [root@anyue ~]# pvs             # 查看新增加的盘
 [root@anyue ~]# fdisk /dev/sdb  # 建立新分区更改类型为8e
 [root@anyue ~]# mkfs.ext4 /dev/sdb1
@@ -189,7 +189,7 @@ root@192.168.1.161:~$sar -u -f test	# 查看
 ```
 
 #### 6.2 从其他分区获得空间,/home 299G
-```
+```bash
 [root@anyue ~]# umount /home    # 提到无法卸载，fuser -m /home
 [root@anyue ~]# e2fsck -f /dev/mapper/VolGroup-lv_home
 [root@anyue ~]# resize2fs -p /dev/mapper/VolGroup-lv_home 279G

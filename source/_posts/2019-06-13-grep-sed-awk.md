@@ -11,7 +11,7 @@ date: 2019-06-13 21:23:48
 <!-- more -->
 
 #### Linux报“ '/usr/bin' is not included in the PATH environment variable ”的解决方法:
-```
+```bash
 利用/usr/bin vi 编辑之前改过环境变量:
 /usr/bin vi ~/.bashrc
 ```
