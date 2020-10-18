@@ -6,7 +6,7 @@
   <link href="https://anyue967.github.io/atom.xml" rel="self"/>
   
   <link href="https://anyue967.github.io/"/>
-  <updated>2020-09-14T10:45:26.840Z</updated>
+  <updated>2020-09-26T15:17:53.123Z</updated>
   <id>https://anyue967.github.io/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>pmp</title>
+    <link href="https://anyue967.github.io/posts/2be6d594.html"/>
+    <id>https://anyue967.github.io/posts/2be6d594.html</id>
+    <published>2020-09-26T15:16:32.000Z</published>
+    <updated>2020-09-26T15:17:53.123Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2020-09-26-PMP&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="PMP" scheme="https://anyue967.github.io/categories/PMP/"/>
+    
+    
+    <category term="PMP" scheme="https://anyue967.github.io/tags/PMP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>pyData</title>
+    <link href="https://anyue967.github.io/posts/62a7ad9d.html"/>
+    <id>https://anyue967.github.io/posts/62a7ad9d.html</id>
+    <published>2020-09-23T08:48:03.000Z</published>
+    <updated>2020-09-25T13:38:57.534Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2020-09-23-pyData&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="python" scheme="https://anyue967.github.io/categories/python/"/>
+    
+    
+    <category term="python" scheme="https://anyue967.github.io/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux Tools</title>
@@ -373,52 +411,6 @@
     <category term="linux" scheme="https://anyue967.github.io/tags/linux/"/>
     
     <category term="Devops" scheme="https://anyue967.github.io/tags/Devops/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Kubernetes</title>
-    <link href="https://anyue967.github.io/posts/9acacb00.html"/>
-    <id>https://anyue967.github.io/posts/9acacb00.html</id>
-    <published>2019-07-25T02:32:38.000Z</published>
-    <updated>2020-09-01T03:49:20.578Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;2019-07-25-K8S&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="kubernetes" scheme="https://anyue967.github.io/categories/kubernetes/"/>
-    
-    
-    <category term="docker" scheme="https://anyue967.github.io/tags/docker/"/>
-    
-    <category term="k8s" scheme="https://anyue967.github.io/tags/k8s/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Jenkins</title>
-    <link href="https://anyue967.github.io/posts/9a7f448e.html"/>
-    <id>https://anyue967.github.io/posts/9a7f448e.html</id>
-    <published>2019-07-23T13:38:48.000Z</published>
-    <updated>2020-09-14T10:20:33.273Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;2019-07-23-Jenkins&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="CICD" scheme="https://anyue967.github.io/categories/CICD/"/>
-    
-    
-    <category term="Jenkins" scheme="https://anyue967.github.io/tags/Jenkins/"/>
-    
-    <category term="Linux" scheme="https://anyue967.github.io/tags/Linux/"/>
-    
-    <category term="CI" scheme="https://anyue967.github.io/tags/CI/"/>
-    
-    <category term="CD" scheme="https://anyue967.github.io/tags/CD/"/>
     
   </entry>
   
