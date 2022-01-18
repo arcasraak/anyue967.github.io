@@ -111,11 +111,11 @@ deploy:
       git@github.com:anyue967/anyue967.github.io.git
     branch: master
     message: Daily updated：{{now("YYYY-MM-DD HH:mm:ss")}} by anyue967 personal PC
-  - type: 'git'
-    repo:
-      git@e.coding.net:anyue967/anyue967/anyue967.git
-    branch: master
-    message: Daily updated：{{now("YYYY-MM-DD HH:mm:ss")}} by anyue967 personal PC
+  #- type: 'git'
+  #  repo:
+  #    git@e.coding.net:anyue967/anyue967/anyue967.git
+  #  branch: master
+  #  message: Daily updated：{{now("YYYY-MM-DD HH:mm:ss")}} by anyue967 personal PC
 
 # browsersync
 ## https://github.com/hexojs/hexo-browsersync
