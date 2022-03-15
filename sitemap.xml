@@ -396,20 +396,6 @@
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/tags/Devops/</loc>
-    <lastmod>2022-03-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://anyue967.github.io/tags/%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2022-03-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://anyue967.github.io/tags/markdown/</loc>
     <lastmod>2022-03-15</lastmod>
     <changefreq>daily</changefreq>
@@ -418,6 +404,20 @@
   
   <url>
     <loc>https://anyue967.github.io/tags/story/</loc>
+    <lastmod>2022-03-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://anyue967.github.io/tags/Devops/</loc>
+    <lastmod>2022-03-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://anyue967.github.io/tags/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2022-03-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -657,14 +657,14 @@
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/categories/Devops-linux/</loc>
+    <loc>https://anyue967.github.io/categories/markdown/</loc>
     <lastmod>2022-03-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://anyue967.github.io/categories/markdown/</loc>
+    <loc>https://anyue967.github.io/categories/Devops-linux/</loc>
     <lastmod>2022-03-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -783,6 +783,13 @@
   </url>
   
   <url>
+    <loc>https://anyue967.github.io/categories/SPL/</loc>
+    <lastmod>2022-03-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://anyue967.github.io/categories/apache/nginx/</loc>
     <lastmod>2022-03-15</lastmod>
     <changefreq>daily</changefreq>
@@ -791,13 +798,6 @@
   
   <url>
     <loc>https://anyue967.github.io/categories/apache/nginx/tomcat/</loc>
-    <lastmod>2022-03-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://anyue967.github.io/categories/SPL/</loc>
     <lastmod>2022-03-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
